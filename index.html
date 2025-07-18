@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header>
+      <h1> Rock Paper Scissors</h1>
+    </header>
+    <main>
+      <div class="game-container">
+        <div class="human-choice">
+          <div class="choice-buttons">
+            <button class="choice-button" id="rock"><img src="images/rock.png" alt=""></button>
+            <button class="choice-button" id="paper"><img src="images/paper.png" alt=""></button>
+            <button class="choice-button" id="scissors"><img src="images/scissors.png" alt=""></button>
+          </div>
+        </div>
+        <div class="computer-choice">
+            <p>Computer's choice will appear here</p>
+            <div class="choice-button"><img id="computer-choice-display"src="images/paper.png" alt=""></div>
+        </div>
+
+        <div class="game-info">
+          <div class="result" id="result"></div>
+          <div class="score" id="score"></div>
+        </div>
+
+        <div class="game-controls">
+          <button id="reset">Reset Game</button>
+        </div>
+    </main>
+    
+    <script src="script.js" async defer></script>
+  </body>
+</html>

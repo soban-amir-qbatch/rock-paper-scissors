@@ -1,0 +1,126 @@
+/* CSS Boilerplate */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #222;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-button {
+  width: 100px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  margin: 1rem;
+}
+
+.active {
+  background-color: rgba(131, 131, 131, 0.5);
+}
+
+.choice-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.choice-button img {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .choice-button {
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem;
+  }
+  .choice-button img {
+    width: 80px;
+    height: 80px;
+  } 
+}
+
+.computer-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-info {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+}
+
+.game-controls {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.game-controls button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.game-controls button:hover {
+  background-color: #45a049;
+}
