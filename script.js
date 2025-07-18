@@ -126,5 +126,6 @@ resetButton.addEventListener("click", () => {
   document.getElementById("score").innerText = "Score - You: 0, Computer: 0";
   const gameInfo = document.querySelector(".game-info");
   gameInfo.style.display = "none";
-  resetButton.style.display = "none"; // hide reset button
+  const gameControls = document.querySelector(".game-controls");
+  gameControls.style.display = "none";
 });
